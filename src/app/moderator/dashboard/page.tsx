@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, FileText, Car, Building2, Plane, Search, Eye, LogOut } from 'lucide-react';
-import { getAllPassports, getAllCars, getAllBuildings, getAllAirlineTickets, searchPassports, deleteExpiredTickets, Passport, Car, Building, AirlineTicket } from '@/lib/supabase';
+import { getAllPassports, getAllCars, getAllBuildings, getAllAirlineTickets, searchPassports, deleteExpiredTickets, Passport, Car as CarType, Building, AirlineTicket } from '@/lib/supabase';
 
 export const dynamic = 'force-dynamic';
 
@@ -18,7 +18,7 @@ export default function ModeratorDashboardPage() {
 
   // Data states
   const [passports, setPassports] = useState<Passport[]>([]);
-  const [cars, setCars] = useState<Car[]>([]);
+  const [cars, setCars] = useState<CarType[]>([]);
   const [buildings, setBuildings] = useState<Building[]>([]);
   const [tickets, setTickets] = useState<AirlineTicket[]>([]);
 
