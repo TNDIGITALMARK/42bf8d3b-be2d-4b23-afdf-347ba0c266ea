@@ -149,7 +149,6 @@ export default function PassportApplicationPage() {
       // Show success
       setIsComplete(true);
     } catch (error) {
-      console.error('Error creating passport:', error);
       alert('Failed to create passport. Please try again.');
     } finally {
       setIsSubmitting(false);

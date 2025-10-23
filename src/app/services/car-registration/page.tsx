@@ -57,7 +57,6 @@ export default function CarRegistrationPage() {
       setCarId(car.id);
       setIsComplete(true);
     } catch (error) {
-      console.error('Error creating car:', error);
       alert('Failed to register car. Please try again.');
     } finally {
       setIsSubmitting(false);

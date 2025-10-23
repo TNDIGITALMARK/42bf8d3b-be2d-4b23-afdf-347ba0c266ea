@@ -52,7 +52,6 @@ export default function BuildingRegistrationPage() {
       setBuildingId(building.id);
       setIsComplete(true);
     } catch (error) {
-      console.error('Error creating building:', error);
       alert('Failed to register building. Please try again.');
     } finally {
       setIsSubmitting(false);

@@ -61,7 +61,6 @@ export default function AirlineTicketPage() {
       setTicketId(ticket.id);
       setIsComplete(true);
     } catch (error) {
-      console.error('Error creating ticket:', error);
       alert('Failed to create ticket. Please try again.');
     } finally {
       setIsSubmitting(false);
