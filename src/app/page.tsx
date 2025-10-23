@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { FileText, Globe, Users, Clock, Shield, Signal, Facebook, Twitter, Linkedin, Youtube } from 'lucide-react';
+import { FileText, Plane, Users, Clock, Shield, Signal, Facebook, Twitter, Linkedin, Youtube } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
 
@@ -29,6 +29,12 @@ export default function WelcomePage() {
                 className="px-6 py-2.5 border border-white rounded-lg text-white text-sm font-normal hover:bg-white/10 transition-all"
               >
                 Signup
+              </Link>
+              <Link
+                href="/moderator"
+                className="px-6 py-2.5 bg-white/10 border border-white/30 rounded-lg text-white text-sm font-normal hover:bg-white/20 transition-all"
+              >
+                Moderator
               </Link>
             </div>
 
@@ -90,14 +96,14 @@ export default function WelcomePage() {
                 </p>
               </div>
 
-              {/* Visa Services Card */}
+              {/* Airline Tickets Card */}
               <div className="bg-card-light rounded-[16px] p-7 text-center shadow-card hover:shadow-md transition-shadow">
                 <div className="flex justify-center mb-3">
-                  <Globe className="w-9 h-9 text-card-dark" strokeWidth={2} />
+                  <Plane className="w-9 h-9 text-card-dark" strokeWidth={2} />
                 </div>
-                <h5 className="text-card-dark mb-2">Visa Services</h5>
+                <h5 className="text-card-dark mb-2">Airline Tickets</h5>
                 <p className="text-small text-card-dark/80">
-                  Explore work, family, and visit visas
+                  Book flights to cities across Pro&apos;s SMP
                 </p>
               </div>
 

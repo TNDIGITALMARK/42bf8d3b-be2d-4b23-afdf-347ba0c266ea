@@ -106,38 +106,38 @@ export default function DashboardPage() {
               <div className="grid grid-cols-3 gap-4">
                 {/* Passport Service */}
                 <Link
-                  href="/application"
+                  href="/services/passport"
                   className="bg-card-light rounded-[16px] p-6 text-center shadow-card hover:shadow-md transition-all hover:scale-105"
                 >
                   <div className="flex justify-center mb-3">
                     <FileText className="w-10 h-10 text-card-dark" strokeWidth={2} />
                   </div>
-                  <h5 className="text-card-dark mb-2">Passport Services</h5>
-                  <p className="text-small text-card-dark/80">New & renewal applications</p>
+                  <h5 className="text-card-dark mb-2">Passport Application</h5>
+                  <p className="text-small text-card-dark/80">Get your SMP passport</p>
                 </Link>
 
-                {/* Professional Licensing */}
+                {/* Airline Tickets */}
                 <Link
-                  href="/application"
-                  className="bg-card-light rounded-[16px] p-6 text-center shadow-card hover:shadow-md transition-all hover:scale-105"
-                >
-                  <div className="flex justify-center mb-3">
-                    <CheckCircle className="w-10 h-10 text-card-dark" strokeWidth={2} />
-                  </div>
-                  <h5 className="text-card-dark mb-2">Professional Licensing</h5>
-                  <p className="text-small text-card-dark/80">Business certifications</p>
-                </Link>
-
-                {/* Document Verification */}
-                <Link
-                  href="/application"
+                  href="/services/airline-ticket"
                   className="bg-card-light rounded-[16px] p-6 text-center shadow-card hover:shadow-md transition-all hover:scale-105"
                 >
                   <div className="flex justify-center mb-3">
                     <Globe className="w-10 h-10 text-card-dark" strokeWidth={2} />
                   </div>
-                  <h5 className="text-card-dark mb-2">Document Verification</h5>
-                  <p className="text-small text-card-dark/80">Validate credentials</p>
+                  <h5 className="text-card-dark mb-2">Airline Tickets</h5>
+                  <p className="text-small text-card-dark/80">Book your flight</p>
+                </Link>
+
+                {/* Citizen Services */}
+                <Link
+                  href="/services"
+                  className="bg-card-light rounded-[16px] p-6 text-center shadow-card hover:shadow-md transition-all hover:scale-105"
+                >
+                  <div className="flex justify-center mb-3">
+                    <CheckCircle className="w-10 h-10 text-card-dark" strokeWidth={2} />
+                  </div>
+                  <h5 className="text-card-dark mb-2">Citizen Services</h5>
+                  <p className="text-small text-card-dark/80">Cars & buildings</p>
                 </Link>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function DashboardPage() {
 
               <div className="space-y-4">
                 <Link
-                  href="/application"
+                  href="/services"
                   className="flex items-center gap-3 p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-all"
                 >
                   <FileText className="w-5 h-5 text-white" />
